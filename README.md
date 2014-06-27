@@ -1,9 +1,17 @@
-mini-blog-passport
+Mini-blog-passport
 ==================
 
-To run this example: 
+This code is the integration of PassportJS to the mini-blog-mean, our application. The objective is to introduce an authenticated login so that each user can only see their information.
+
+
+#### User credentials to test this project:
+**user:** admin
+**pass:** admin
+
+
+#### To run this example: 
 1. `npm install`
-2. `npm install underscore`
-3. `npm install mongoose`
-4. `npm install passport`
-5. `node web-server.js`
+2. `node web-server.js`
+
+
+For further details please take a look at this [video](http://screencast.com/t/Vig7YLOd).
