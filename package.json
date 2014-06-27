@@ -1,7 +1,7 @@
 {
-  "name": "angularjs-mini-blog",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/juanasas/angular-mini-blog",
+  "name": "angularjs-mini-blog-passport",
+  "description": "A project to integrate PassportJS to mini-blog-mean",
+  "repository": "https://github.com/makingsensetraining/mini-blog-passport",
   "devDependencies": {
     "express": "~3.2.6",
     "underscore":"*",
