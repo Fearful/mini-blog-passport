@@ -1,3 +1,7 @@
+/**********************************************************************
+ * Edit post controller
+ **********************************************************************/
+
 app.controller('editPostCtrl', function($scope, $routeParams, blogService, $location, toaster) {
     //get the element by id
     $scope.current = blogService.getById($routeParams.postId)

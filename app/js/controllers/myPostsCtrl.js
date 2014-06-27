@@ -1,3 +1,7 @@
+/**********************************************************************
+ * My posts controller
+ **********************************************************************/
+
 'use strict';
 
 app.controller('myPostsCtrl', function($scope, blogService, toaster) {

@@ -1,8 +1,8 @@
-app.controller ('navCtrl', function ($scope, $location){
-    //redirect to home as default
-    $location.path("/");
-    //Mark "My posts" selected as default
-    $scope.isPostSelected = true;
+/**********************************************************************
+ * Nav controller
+ **********************************************************************/
+
+app.controller ('navCtrl', function ($scope, $location, $rootScope, $http){
     //Mark Post as selected
     $scope.markPostSelected = function(){
         $scope.isHomeSelected = false;
@@ -13,4 +13,23 @@ app.controller ('navCtrl', function ($scope, $location){
         $scope.isHomeSelected = false;
         $scope.isPostSelected = false;
     };
+    
+    $scope.init = function(){
+        //redirect to home as default
+        $location.path("/");                
+        $http.get('/loggedin').success(function(response){
+            $scope.response = response;
+            if ($scope.response != 0){            
+                $rootScope.user = response.name;
+                $rootScope.isLogged = true;
+            }
+            else
+                $rootScope.isLogged = false;                
+        });                
+        $scope.isPostSelected = false;                
+    };
+    
+    $scope.init();
 });
+
+

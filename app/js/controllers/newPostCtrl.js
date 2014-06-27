@@ -1,3 +1,7 @@
+/**********************************************************************
+ * New Post controller
+ **********************************************************************/
+
 'use strict';
 
 app.controller('newPostCtrl', function($scope, blogService, $location, toaster) {

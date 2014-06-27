@@ -1,6 +1,8 @@
+/**********************************************************************
+ * Services
+ **********************************************************************/
 'use strict';
 
-/* Services */
 app.service('blogService', function ($http, $location) {
         
         var urlBase = "/api/myPosts";
@@ -17,12 +19,12 @@ app.service('blogService', function ($http, $location) {
     
         //add a new element to array
         this.create = function (postData) {
-            return $http.post('/newPost', postData);
+            return $http.put('/newPost', postData);
         };   
     
         //update blogItem matching by id
         this.update = function (blogItemId, blogItem) {
-            return $http.update('/editPost', blogItem);
+            return $http.post('/editPost', blogItem);
         };
     
         //remove blogItem matching by id

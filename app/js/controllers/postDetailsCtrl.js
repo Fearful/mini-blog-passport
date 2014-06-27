@@ -1,3 +1,7 @@
+/**********************************************************************
+ * Post Details controller
+ **********************************************************************/
+
 'use strict';
 
 app.controller('postDetailsCtrl', function($scope, $routeParams, blogService, $location, toaster) {
