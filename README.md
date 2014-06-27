@@ -1,2 +1,2 @@
-mini-blog-passport
-==================
+mini-blog-mean
+==============
