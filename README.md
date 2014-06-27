@@ -1,8 +1,7 @@
 Mini-blog-passport
 ==================
 
-This code is the integration of PassportJS to the mini-blog-mean, our application. The objective is to introduce an authenticated login so that each user can only see their information.
-
+This repository has login authorization implementation for [mini-blog-mean](https://github.com/makingsensetraining/mini-blog-mean) using [Passport.js](https://github.com/jaredhanson/passport). The objective is to introduce login capabilities in order to secure the different administration zones in our application
 
 #### User credentials to test this project:
 **user:** admin
